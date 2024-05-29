@@ -1,0 +1,337 @@
+* {
+  font-family: Vinque;
+}
+
+body,
+h1,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  background-image: var(--armored-man);
+  background-blend-mode: color-dodge;
+  background-position: -30vw -75vh;
+  background-size: 100vw;
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-color: #030301;
+  height: 100%;
+}
+
+:root {
+  --black: #323036;
+  --white: #fffbf7;
+  --bright-blue: #8fada2;
+  --pale-blue: #768178;
+  --blue: #403e64;
+  --blood-thick: #6e2f23;
+  --blood-thin: #963b20;
+  --blood-bright: #ff7e7e;
+  --gold: #ff6a00;
+  --shiny-gold: #ffa781;
+  --kings: KingsCross;
+  --title: 120px;
+  --full-height: 100vh;
+  --armored-man: url(assets/images/man-in-armour-ctto-rembrandt.jpeg);
+  --salvaje-odin: url(assets/images/La_caza_salvaje_de_Odín,_por_Peter_Nicolai_Arbo.jpg);
+  --some-war: url(assets/images/some-war.png);
+}
+
+.header.main.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  color: var(--white);
+  height: var(--full-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 30px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+h1.brand {
+  font-family: var(--kings);
+  font-size: var(--title);
+  color: var(--blood-thin);
+}
+
+nav .first-letter {
+  font-family: var(--kings);
+  font-size: 80px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 30px;
+}
+
+nav a {
+  color: var(--pale-blue);
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+nav a:hover {
+  color: var(--bright-blue);
+}
+
+nav a.active {
+  color: var(--bright-blue);
+  text-decoration: 2px overline;
+  position: relative;
+  text-shadow: 0px 0px 1px var(--black);
+}
+
+main ul {
+  list-style: none;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+.projects-container {
+  overflow-y: scroll;
+  max-height: 99vh;
+  scrollbar-width: none;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.project a {
+  text-decoration: none;
+  color: var(--pale-blue);
+  transition: color 0.1s ease;
+  transition: font-size 0.1s ease;
+}
+
+.project a:hover {
+  color: var(--bright-blue);
+  font-size: 105%;
+}
+
+.project .first-letter {
+  font-family: var(--kings);
+  font-size: 200px;
+}
+
+.project .mw {
+  font-size: 100px;
+}
+
+.project-info {
+  font-size: 20px;
+  margin-right: 50px;
+  max-width: 300px;
+  color: var(--pale-blue);
+}
+
+.content div main {
+  width: 80vw;
+  text-align: right;
+}
+
+main .page {
+  color: var(--pale-blue);
+}
+
+main .page h2 {
+  font-size: 25px;
+  color: var(--pale-blue);
+  text-decoration: 2px overline;
+}
+
+main .page h2 .first-letter {
+  font-family: var(--kings);
+  font-size: var(--title);
+  color: var(--bright-blue);
+}
+
+
+.contact-container .first-letter {
+  font-family: var(--kings);
+  font-size: 25px;
+}
+
+.contact.phone, .contact.email, .contact.social {
+    text-decoration: none;
+    color: var(--bright-blue);
+}
+address{
+  color: var(--pale-blue);
+}
+footer {
+  position: relative;
+}
+
+footer .container {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+}
+
+footer p {
+  text-align: right;
+  color: var(--pale-blue);
+}
+
+footer .brand {
+  color: var(--bright-blue);
+  font-family: var(--kings);
+  font-size: 30px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1481px) {
+  /*About*/
+#knowMore ul {
+  gap: 10px;
+}
+
+.basic-info-item {
+  font-size: 30px;
+}
+}
+
+@media screen and (max-width: 1480px) {
+  h1.brand {
+    font-size: 7vw;
+  }
+  main .page h2 .first-letter {
+    font-size: 4vw;
+  }
+  main .page h2 {
+    font-size: 2vw;
+  }
+  .project-info {
+    font-size: 1vw;
+  }
+  main ul {
+    font-size: 3vw;
+  }
+  .project .mw {
+    font-size: 4vw;
+  }
+  .project .first-letter {
+    font-size: 7vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .content {
+    overflow: scroll;
+    padding: 0;
+    align-items: center;
+  }
+  .content div main {
+    margin-top: 10vh;
+  }
+
+  header {
+    z-index: 1;
+  }
+
+  .header.main.wrapper {
+    flex-direction: column;
+  }
+
+  header .container {
+    position: fixed;
+    gap: 0;
+  }
+
+  header nav {
+    position: fixed;
+    top: calc(6vh + 6%);
+  }
+
+  body::before {
+    background-position: -50vw -25vh;
+    background-position-x: calc(70% + 10vw);
+    background-position-y: -25vh;
+    background-size: 100vh;
+  }
+
+  #info {
+    position: fixed;
+  }
+
+  h1.brand {
+    font-size: 20vw;
+  }
+
+  nav ul {
+    font-size: 4vw;
+  }
+  nav a.active {
+    text-decoration: none;
+  }
+  nav .first-letter {
+    font-size: 10vw;
+  }
+
+  main .page h2 {
+    font-size: 4vw;
+  }
+
+  main .page h2 .first-letter {
+    font-size: 10vw;
+  }
+
+  main ul {
+    height: 60vh;
+    font-size: 4vw;
+    gap: 10vh;
+  }
+
+  .project {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+
+  .project-info {
+    font-size: 3vw;
+    margin-right: 0;
+  }
+
+  .project .mw {
+    font-size: 6vw;
+  }
+
+  .project .first-letter {
+    font-family: var(--kings);
+    font-size: 10vw;
+  }
+
+  footer {
+    background-color: #030301;
+    min-height: 80px;
+    width: 100vw;
+    position: relative;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 4vw;
+  }
+}

@@ -1,0 +1,33 @@
+
+h1.brand.effect-shine,
+footer p.effect-shine {
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 20%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 80%
+  );
+  mask-size: 200%;
+  animation: shine 4s infinite;
+}
+
+main .page h2.effect-shine {
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 80%
+  );
+  mask-size: 30%;
+  animation: shine 30s infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 200%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
