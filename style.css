@@ -38,7 +38,7 @@ body::before {
   --title: 120px;
   --full-height: 100vh;
   --armored-man: url(assets/images/man-in-armour-ctto-rembrandt.jpeg);
-  --salvaje-odin: url(assets/images/La_caza_salvaje_de_Odín,_por_Peter_Nicolai_Arbo.jpg);
+  --salvaje-odin: url(assets/images/La_caza_salvaje_de_Odín_por_Peter_Nicolai_Arbo.jpg);
   --some-war: url(assets/images/some-war.png);
 }
 
@@ -167,17 +167,18 @@ main .page h2 .first-letter {
   color: var(--bright-blue);
 }
 
-
 .contact-container .first-letter {
   font-family: var(--kings);
   font-size: 25px;
 }
 
-.contact.phone, .contact.email, .contact.social {
-    text-decoration: none;
-    color: var(--bright-blue);
+.contact.phone,
+.contact.email,
+.contact.social {
+  text-decoration: none;
+  color: var(--bright-blue);
 }
-address{
+address {
   color: var(--pale-blue);
 }
 footer {
@@ -205,13 +206,13 @@ footer .brand {
 
 @media screen and (min-width: 1481px) {
   /*About*/
-#knowMore ul {
-  gap: 10px;
-}
+  #knowMore ul {
+    gap: 10px;
+  }
 
-.basic-info-item {
-  font-size: 30px;
-}
+  .basic-info-item {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 1480px) {
@@ -266,7 +267,6 @@ footer .brand {
   }
 
   body::before {
-    background-position: -50vw -25vh;
     background-position-x: calc(70% + 10vw);
     background-position-y: -25vh;
     background-size: 100vh;
@@ -333,5 +333,53 @@ footer .brand {
   footer p {
     text-align: center;
     font-size: 4vw;
+  }
+}
+@media screen and (orientation: landscape) and (max-width: 992px) and (max-height: 570px) {
+  body::before {
+    background-size: 100vw;
+    background-position: 0px -90vh;
+  }
+  h1.brand {
+    font-size: 10vw;
+  }
+  header nav {
+    top: calc(15vh + 15%);
+  }
+  nav ul {
+    font-size: calc(2vh + 1vw);
+  }
+  nav .first-letter {
+    font-size: calc(10vh + 2vw);
+  }
+  .content {
+    overflow: hidden;
+  }
+  .content div main {
+    margin-top: 0;
+    top: -20px;
+    position: relative;
+  }
+  main ul {
+    font-size: calc(2vh + 1vw);
+    gap: 1vh;
+  }
+  .contact-container {
+    font-size: calc(2vh + 1vw + -6%);
+  }
+  footer {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: auto;
+  }
+  footer .container {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  footer p {
+    font-size: 2vw;
   }
 }
