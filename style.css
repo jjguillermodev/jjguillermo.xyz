@@ -49,11 +49,14 @@ body::before {
 
 .content {
   color: var(--white);
+<<<<<<< HEAD
+  height: 95vh;
+=======
   height: var(--full-height);
-  max-height: 850px;
+>>>>>>> parent of 8b10954 (Update style.css)
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5px 30px;
   box-sizing: border-box;
   position: relative;
