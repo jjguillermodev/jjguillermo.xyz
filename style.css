@@ -50,6 +50,7 @@ body::before {
 .content {
   color: var(--white);
   height: var(--full-height);
+  max-height: 850px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
