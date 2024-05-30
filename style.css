@@ -46,7 +46,7 @@ body::before {
   height: 94vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 5px 30px;
   box-sizing: border-box;
   position: relative;
