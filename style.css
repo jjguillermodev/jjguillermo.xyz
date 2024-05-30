@@ -93,7 +93,6 @@ nav a:hover {
 
 nav a.active {
   color: var(--bright-blue);
-  text-decoration: 2px overline;
   position: relative;
   text-shadow: 0px 0px 1px var(--black);
 }
