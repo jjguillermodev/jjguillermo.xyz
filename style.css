@@ -49,10 +49,11 @@ body::before {
 
 .content {
   color: var(--white);
-  height: 95vh;
+  height: var(--full-height);
+  max-height: 850px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 5px 30px;
   box-sizing: border-box;
   position: relative;
