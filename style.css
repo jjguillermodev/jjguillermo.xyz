@@ -28,18 +28,12 @@ body::before {
   --white: #fffbf7;
   --bright-blue: #8fada2;
   --pale-blue: #768178;
-  --blue: #403e64;
   --blood-thick: #6e2f23;
   --blood-thin: #963b20;
   --blood-bright: #ff7e7e;
-  --gold: #ff6a00;
-  --shiny-gold: #ffa781;
   --kings: KingsCross;
   --title: 120px;
-  --full-height: 100vh;
   --armored-man: url(assets/images/man-in-armour-ctto-rembrandt.jpeg);
-  --salvaje-odin: url(assets/images/La_caza_salvaje_de_Odín_por_Peter_Nicolai_Arbo.jpg);
-  --some-war: url(assets/images/some-war.png);
 }
 
 .header.main.wrapper {
@@ -49,11 +43,7 @@ body::before {
 
 .content {
   color: var(--white);
-<<<<<<< HEAD
-  height: 95vh;
-=======
-  height: var(--full-height);
->>>>>>> parent of 8b10954 (Update style.css)
+  height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,12 +174,7 @@ address {
   color: var(--pale-blue);
 }
 footer {
-  position: relative;
-}
-
-footer .container {
-  position: absolute;
-  left: 0;
+  position: fixed;
   bottom: 20px;
 }
 
