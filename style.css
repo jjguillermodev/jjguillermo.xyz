@@ -99,7 +99,7 @@ main ul {
 }
 .projects-container {
   overflow-y: scroll;
-  max-height: 99vh;
+  max-height: 90vh;
   scrollbar-width: none;
 }
 
